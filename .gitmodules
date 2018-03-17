@@ -1,0 +1,3 @@
+[submodule "src/Maybe"]
+	path = src/Maybe
+	url = https://github.com/Altamir/Maybe.git
