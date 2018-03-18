@@ -38,6 +38,12 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\Estado.cs" />
+    <Compile Include="Enum\Mesorregiao.cs" />
+    <Compile Include="Extensions\EstadoExtension.cs" />
+    <Compile Include="Enum\Regiao.cs" />
+    <Compile Include="Extensions\RegiaoExtension.cs" />
+    <Compile Include="Localidade.cs" />
     <Compile Include="PlusCode\IPlusCode.cs" />
     <Compile Include="PlusCode\IPlusCodeBuilder.cs" />
     <Compile Include="PlusCode\PlusCode.cs" />

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlusCode", "PlusCode\PlusCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlusCode.Tests", "PlusCode\PlusCode.Tests\PlusCode.Tests.csproj", "{C577DD78-A533-4AEE-9BD8-AB8BB21B27E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio.Localidade.Tests", "Dominio\Dominio.Localidade.Tests\Dominio.Localidade.Tests.csproj", "{B3D8F85F-A38F-4155-8EE8-0F20492B3CD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C577DD78-A533-4AEE-9BD8-AB8BB21B27E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C577DD78-A533-4AEE-9BD8-AB8BB21B27E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C577DD78-A533-4AEE-9BD8-AB8BB21B27E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D8F85F-A38F-4155-8EE8-0F20492B3CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D8F85F-A38F-4155-8EE8-0F20492B3CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D8F85F-A38F-4155-8EE8-0F20492B3CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D8F85F-A38F-4155-8EE8-0F20492B3CD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{3AE4139B-A96B-4E51-95BB-450C976FCF6B} = {96E68658-7FEC-46CB-82D1-B700DD34186F}
 		{C6DEAE60-9A92-4173-AD41-05DCD707C4F4} = {F3C3F324-34B9-4658-B623-2FC3F6A72C38}
 		{C577DD78-A533-4AEE-9BD8-AB8BB21B27E6} = {F3C3F324-34B9-4658-B623-2FC3F6A72C38}
+		{B3D8F85F-A38F-4155-8EE8-0F20492B3CD6} = {96E68658-7FEC-46CB-82D1-B700DD34186F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {986F3FC9-5A4A-4D82-A0AF-C86B356406AF}

@@ -29,8 +29,7 @@ namespace PlusCode
                                             .PlusCode(code: co,
                                                         latitude: latitude.ToString(),
                                                         longitude: longitude.ToString(),
-                                                        codeL: 10));
-            
+                                                        codeL: 10));            
         }
     }
 }
