@@ -8,7 +8,7 @@ namespace Dominio.Localidade.Enum
         [Description("Leste Rondoniense")]
         Leste_Rondoniense = 11000,
         [Description("Madeira Guaporé")]
-        Madeira_Guaporé = 11100,
+        Madeira_Guapore = 11100,
 
         [Description("Vale do Acre")]
         Vale_do_Acre = 12000,

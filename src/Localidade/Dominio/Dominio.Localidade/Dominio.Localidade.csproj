@@ -42,6 +42,7 @@
     <Compile Include="Enum\Mesorregiao.cs" />
     <Compile Include="Extensions\EstadoExtension.cs" />
     <Compile Include="Enum\Regiao.cs" />
+    <Compile Include="Extensions\MesorregiaoExtension.cs" />
     <Compile Include="Extensions\RegiaoExtension.cs" />
     <Compile Include="Localidade.cs" />
     <Compile Include="PlusCode\IPlusCode.cs" />

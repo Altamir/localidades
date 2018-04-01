@@ -9,22 +9,21 @@ namespace Dominio.Localidade.Tests
     [TestFixture]
     public class RegioesEEstadosTest
     {
-        [Test]       
-        public void Obtem_regiao_do_estado()
+        [TestCase(Estado.TO, ExpectedResult = Regiao.Norte)]
+        [TestCase(Estado.CE, ExpectedResult = Regiao.Nordeste)]
+        [TestCase(Estado.SP, ExpectedResult = Regiao.Sudeste)]
+        [TestCase(Estado.RS, ExpectedResult = Regiao.Sul)]
+        [TestCase(Estado.DF, ExpectedResult = Regiao.Centro_Oeste)]       
+        public Regiao Obtem_regiao_do_estado(Estado estado)
         {
-            Estado estado = Estado.CE;
-            Assert.AreEqual(Regiao.Nordeste, estado.GetRegiao());
-             estado = Estado.RS;
-            Assert.AreEqual(Regiao.Sul, estado.GetRegiao());
-             estado = Estado.DF;
-            Assert.AreEqual(Regiao.Centro_Oeste, estado.GetRegiao());
+            return estado.GetRegiao();
         }
 
 
         [Test]
-        public void Obtem_Estados_de_Uma_regiao()
+        public void Obtem_Estados_da_regiao_Sul()
         {
-            List<Estado> esperado = new List<Estado>{ Estado.PR, Estado.SC,  Estado.RS };
+            List<Estado> esperado = new List<Estado> { Estado.PR, Estado.SC, Estado.RS };
             CollectionAssert.AreEqual(esperado, Regiao.Sul.Estados().ToList());
         }
     }
