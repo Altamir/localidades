@@ -5,5 +5,5 @@ install:
   - sudo apt-get install nunit-console  
 script:
   - msbuild  /p:Configuration=Debug ./src/Localidade/Localidade.sln
-  - nunit-console ./src/Localidade/Dominio/Dominio.Localidade.Tests/Dominio.Localidade.Tests.dll
+  - nunit-console Dominio.Localidade.Tests
  
