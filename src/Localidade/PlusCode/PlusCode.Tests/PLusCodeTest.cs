@@ -1,13 +1,13 @@
 ﻿using System;
 using Dominio.Localidades.PlusCode;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace PlusCode.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class PLusCodeTest
     {
-        [TestMethod]
+        [Test]
         public void TentaCriarCodi_retornaInvalido()
         {
             IPlusCodeBuilder plusCodeBuilder = new PlusCodeBuilder();
@@ -15,7 +15,7 @@ namespace PlusCode.Tests
             Assert.IsFalse(result.HasValue);
         }
 
-        [TestMethod]
+        [Test]
         public void TentaCriarCodi_retorna_valido()
         {
             IPlusCodeBuilder plusCodeBuilder = new PlusCodeBuilder();
@@ -25,7 +25,7 @@ namespace PlusCode.Tests
             Assert.AreEqual("-30,02775", result.Value.Logitude);
         }
 
-        [TestMethod]
+        [Test]
         public void TentaCriarCodi_retorna_validoasd()
         {
             IPlusCodeBuilder plusCodeBuilder = new PlusCodeBuilder();

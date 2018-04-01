@@ -2,14 +2,14 @@
 using System.Linq;
 using Dominio.Localidade.Enum;
 using Dominio.Localidade.Extensions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace Dominio.Localidade.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class RegioesEEstadosTest
     {
-        [TestMethod]       
+        [Test]       
         public void Obtem_regiao_do_estado()
         {
             Estado estado = Estado.CE;
@@ -21,7 +21,7 @@ namespace Dominio.Localidade.Tests
         }
 
 
-        [TestMethod]
+        [Test]
         public void Obtem_Estados_de_Uma_regiao()
         {
             List<Estado> esperado = new List<Estado>{ Estado.PR, Estado.SC,  Estado.RS };
