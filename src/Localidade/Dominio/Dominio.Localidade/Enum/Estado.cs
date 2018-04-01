@@ -2,7 +2,6 @@
 {
     public enum Estado
     {
-
         RO = 11,
         AC = 12,
         AM = 13,
@@ -20,13 +19,16 @@
         AL = 27,
         SE = 28,
         BA = 29,
+
         MG = 31,
         ES = 32,
         RJ = 33,
         SP = 35,
+
         PR = 41,
         SC = 42,
         RS = 43,
+
         MS = 50,
         MT = 51,
         GO = 52,
