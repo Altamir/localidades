@@ -5,5 +5,5 @@ install:
   - sudo apt-get install nunit-console  
 script:
   - msbuild  /p:Configuration=Debug ./src/Localidade/Localidade.sln
-  - nunit-console ~/home/travis/build/Altamir/localidades/src/Localidade/Dominio/Dominio.Localidade.Tests/bin/Debug/Dominio.Localidade.Tests.dll
+  - nunit-console ./src/Localidade/Dominio/Dominio.Localidade.Tests/bin/Debug/Dominio.Localidade.Tests.dll
  
