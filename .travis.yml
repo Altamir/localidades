@@ -1,0 +1,10 @@
+language: csharp
+solution: Localidade.sln
+install:
+  - nuget restore Localidade.sln
+  - sudo apt-get install nunit-console  
+script:
+  - msbuild  /p:Configuration=Debug Localidade.sln
+  - nunit-console ./src/Localidade/Dominio/Dominio.Localidade.Tests/Dominio.Localidade.Tests.dll
+ 
+  

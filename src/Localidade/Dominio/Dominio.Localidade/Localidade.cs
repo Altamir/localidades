@@ -1,4 +1,5 @@
 ﻿using Dominio.Localidade.Enum;
+using Dominio.Localidade.Extensions;
 using Dominio.Localidades.PlusCode;
 
 namespace Dominio.Localidade
@@ -14,8 +15,9 @@ namespace Dominio.Localidade
         public string Latitude => PlusCode?.Latitude ?? string.Empty;
         public string Longitude => PlusCode?.Logitude ?? string.Empty;
 
-        public Regiao Regiao { get; protected set; }
-        public Estado Estado { get; protected set; }
+        public Mesorregiao Mesorregiao { get; protected set; }
+        public Regiao Regiao => Mesorregiao.Regiao();
+        public Estado Estado => Mesorregiao.Estado();
 
 
         public bool Ativa { get; protected set; }
