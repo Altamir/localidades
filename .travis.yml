@@ -1,5 +1,5 @@
 language: csharp
-solution: Localidade.sln
+solution: ./src/Localidade/Localidade.sln
 install:
   - nuget restore ./src/Localidade/Localidade.sln
   - sudo apt-get install nunit-console  
