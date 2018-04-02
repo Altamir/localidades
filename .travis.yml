@@ -2,9 +2,8 @@ language: csharp
 solution: ./src/Localidade/Localidade.sln
 install:
   - nuget restore ./src/Localidade/Localidade.sln
-  - sudo apt-get update
-  - sudo apt-get install nunit-console  
+  - nuget install NUnit.Runners -Version 3.2.0 -OutputDirectory testrunner 
 script:
   - msbuild  /p:Configuration=Debug ./src/Localidade/Localidade.sln
-  - nunit-console ./src/Localidade/Dominio/Dominio.Localidade.Tests/bin/Debug/Dominio.Localidade.Tests.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.3.2.0/tools/nunit3-console.exe ./src/Localidade/Dominio/Dominio.Localidade.Tests/bin/Debug/Dominio.Localidade.Tests.dll
  
