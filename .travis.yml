@@ -2,6 +2,7 @@ language: csharp
 solution: ./src/Localidade/Localidade.sln
 install:
   - nuget restore ./src/Localidade/Localidade.sln
+  - sudo apt-get update
   - sudo apt-get install nunit-console  
 script:
   - msbuild  /p:Configuration=Debug ./src/Localidade/Localidade.sln
