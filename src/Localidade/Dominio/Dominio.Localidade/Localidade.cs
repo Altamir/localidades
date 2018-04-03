@@ -4,7 +4,7 @@ using Dominio.Localidades.PlusCode;
 
 namespace Dominio.Localidade
 {
-    public partial class Localidade
+    public class Localidade
     {
         public int LocalidadeId { get; protected set; }
         public string Nome { get; protected set; }
@@ -18,8 +18,7 @@ namespace Dominio.Localidade
         public Mesorregiao Mesorregiao { get; protected set; }
         public Regiao Regiao => Mesorregiao.Regiao();
         public Estado Estado => Mesorregiao.Estado();
-
-
+        
         public bool Ativa { get; protected set; }
     }
 }

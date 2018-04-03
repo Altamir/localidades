@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel;
 
-
 namespace Dominio.Localidade.Enum
 {
     public enum Mesorregiao

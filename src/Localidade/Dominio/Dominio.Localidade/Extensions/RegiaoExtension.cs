@@ -1,9 +1,5 @@
-﻿using Dominio.Localidade.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Dominio.Localidade.Enum;
 
 namespace Dominio.Localidade.Extensions
 {
@@ -12,7 +8,7 @@ namespace Dominio.Localidade.Extensions
         public static Regiao GetRegiao(this Estado estado)
         {
             var value = (int)estado;
-            var result = (Regiao)((int)value / 10);
+            var result = (Regiao)(value / 10);
             return result;
         }
 
