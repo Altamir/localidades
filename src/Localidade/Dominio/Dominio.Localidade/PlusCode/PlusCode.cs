@@ -1,15 +1,15 @@
-﻿using Dominio.Localidades.PlusCode;
-
-namespace Dominio.Localidades.PlusCode
+﻿namespace Dominio.Localidades.PlusCode
 {
     public class PlusCode : IPlusCode
     {
         public string Code => code;
         public string Latitude => latitude;
         public string Logitude => longitude;
-        public int codeLengt => codeL;
+        public int CodeLengt => codeL;
         string code, latitude, longitude;
         int codeL;
+
+        protected PlusCode() {  }
 
         public PlusCode(string code, string latitude, string longitude, int codeL)
         {

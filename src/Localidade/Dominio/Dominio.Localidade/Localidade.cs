@@ -4,7 +4,7 @@ using Dominio.Localidades.PlusCode;
 
 namespace Dominio.Localidade
 {
-    public class Localidade
+    public partial class Localidade
     {
         public int LocalidadeId { get; protected set; }
         public string Nome { get; protected set; }

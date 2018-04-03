@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlusCode.Tests", "PlusCode\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio.Localidade.Tests", "Dominio\Dominio.Localidade.Tests\Dominio.Localidade.Tests.csproj", "{B3D8F85F-A38F-4155-8EE8-0F20492B3CD6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{6932AB23-E247-4C2B-B873-70E09E071597}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

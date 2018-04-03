@@ -1,4 +1,5 @@
-﻿namespace Dominio.Localidade.Enum
+﻿// ReSharper disable InconsistentNaming
+namespace Dominio.Localidade.Enum
 {
     public enum Estado
     {
